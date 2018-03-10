@@ -58,3 +58,44 @@ h3 {
 .bg-dark {
   background-color: var(--second-bg-color);
 }
+
+/* Navbar Styles */
+
+.navbar {
+  background-color: var(--nav-bg-color);
+  padding: 22.5px 0;
+}
+
+.navbar .navbar-toggler {
+  border: 2px solid var(--green-color);
+  margin-left: 10px;
+}
+
+.navbar .fa-bars {
+  color: var(--green-color);
+}
+
+.navbar .navbar-brand {
+  padding-top: 0;
+}
+
+.navbar .nav-link {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #a4aead;
+  font-weight: bold;
+  padding: 4px 8px;
+  margin-left: 15px;
+  border: 2px solid #1d2126;
+  border-radius: 5px;
+  transition: border .3s ease;
+}
+
+.navbar .nav-link.active {
+  border: 2px solid var(--green-color);
+  color: var(--green-color);
+}
+
+.navbar .nav-link:hover {
+  border: 2px solid #a4aead;
+}
