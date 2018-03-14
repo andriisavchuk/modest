@@ -217,3 +217,92 @@ h3 {
   display: inline-block;
   margin-left: 25px;
 }
+
+/* Section Team Styles */
+
+.team h2 {
+  padding-left: 15px;
+  border-left: 10px solid #e1e6ea;
+  line-height: 38px;
+}
+
+.team .card-body {
+  background-color: #e1e6ea;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  transition: ease .5s;
+}
+
+.team .card-body h4 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--heading-dark-color);
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.team .card-body span {
+  line-height: 16px;
+  color: var(--main-txt-color);
+}
+
+.card .card-socials {
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin: 0;
+}
+
+.card .card-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--second-bg-color);
+  color: #fff;
+  margin-right: 1px;
+  transition: ease .5s;
+}
+
+.card .card-socials a:hover {
+  opacity: 0.8;
+}
+
+.card .img {
+  position: relative;
+}
+
+.card .img-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: ease .5s;
+}
+
+.card .img:hover .img-overlay {
+  opacity: 1;
+}
+
+.card:hover .card-body {
+  background-color: var(--second-bg-color);
+  transition: ease .5s;
+}
+
+.card:hover .card-body h4 {
+  color: #fff;
+  transition: ease .5s;
+}
+
+.card:hover .card-body span {
+  color: #fff;
+  transition: ease .5s;
+}
