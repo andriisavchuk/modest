@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/media.css">
 
+  <style>
+    #gmap_canvas img{max-width:none!important;background:none!important}
+  </style>
+
 </head>
 
   <body>
@@ -559,11 +563,67 @@
     </section>
     <!--End of Section Features-->
 
+    <!--Section Contact-->
+    <section class="contact">
+      <div class="container">
+        <div class="row mb-5 top-80 p-80">
+          <div class="col">
+            <h2 class="text-uppercase h-dark">Stay in touch.</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="location">
+        <div style='overflow:hidden;height:350px;width:100%;'>
+          <div id='gmap_canvas' style='height:350px;width:100%;'></div>
+        </div>
+        <a href='https://www.embedmap.net/'>adding google map to website</a>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 contact-info">
+            <h5>Contact information</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.</p>
+            <p>Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus.</p>
+          </div>
+          <div class="col-md-6 form">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="name">Your name</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <div class="col-sm-6">
+                  <label for="email">Your name</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                    <label for="message">Your message</label>
+                    <textarea class="form-control" id="message" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <button type="button" class="btn btn-success" type="submit">Send message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Section Features-->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="js/script.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCRoU6NUH_nzpHwgRRAfrHmGo-GJoI1z24'></script>
+    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e3195e7c620c9fc8de836150da1a917dca93ee38'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(30.2672,-97.74310000000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(30.2672,-97.74310000000003)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br><br> Austin<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 
   </body>
 
