@@ -413,3 +413,87 @@ h3 {
   color: #dcdfe1;
   margin-top: 20px;
 }
+
+/* Section Contact Styles */
+
+.contact h2 {
+  padding-left: 15px;
+  border-left: 10px solid #e1e6ea;
+  line-height: 38px;
+}
+
+.contact .location a {
+  color: #ffffff;
+  cursor: auto;
+}
+
+.contact .form {
+  position: relative;
+  top: -100px;
+  background-color: #fff;
+}
+
+.contact-info {
+  padding: 50px 10px 100px;
+}
+
+.contact-info h5 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--heading-dark-color);
+  margin-bottom: 40px;
+}
+
+.contact-info p {
+  padding-right: 10px;
+}
+
+.contact .form {
+  padding: 25px;
+}
+
+.contact .form label {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.contact .form textarea {
+  resize: none;
+}
+
+.form .form-control {
+  background-color: #eaeef1;
+  color: var(--main-txt-color);
+}
+
+.contact .btn-success {
+  background-color:var(--green-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 10px 25px;
+}
+
+/* Footer Styles */
+
+.footer {
+  background-color: var(--second-bg-color);
+  padding: 30px 0 10px;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer .footer-socials {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-socials li {
+  display: inline-block;
+}
+
+.footer .footer-socials li a {
+  color: #fff;
+}
