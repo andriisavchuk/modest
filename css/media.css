@@ -1,21 +1,36 @@
-
-
 @media only screen and (max-width : 1170px) {
 
+  .collapse.show {
+    padding-top: 20px;
+  }
 
 }
 
 @media only screen and (max-width : 992px) {
 
+  .goals {
+    margin-top: 40px;
+  }
 
 }
 
 @media only screen and (max-width : 768px) {
 
+  .header .header-row {
+    height: 560px;
+  }
 
 }
 
 @media only screen and (max-width : 567px) {
 
+  .footer .copyright {
+    text-align: center;
+  }
+
+  .footer .footer-socials {
+    padding: 0 50px;
+    margin-top: 20px;
+  }
 
 }
